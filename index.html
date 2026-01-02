@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Salman profile</title>
+	<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" type="text/css">
+	<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<style>
+	/*-------------- Navbar fix ---------------*/
+	.navbar
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 0px 0px;
+	}
+	.nav-links{
+		display: flex;
+		gap: 15px;
+		flex-wrap: wrap;
+	}
+
+	@media(max-width: 768px)
+	{
+		.nav-links{
+			width: 100%;
+			justify-content: center;
+		}
+	}
+
+	/* Center navbar items on mobile (<= 991px) */
+	@media (max-width: 991px) {
+		.navbar-collapse .navbar-nav {
+			/* when stacked vertically, center the list and its items */
+			align-items: center;
+			width: 100%;
+		}
+		.navbar-collapse .navbar-nav .nav-link {
+			text-align: center;
+			width: auto;
+		}
+	}
+
+/*------------ Home letter keyframe ----------------*/
+	:root {
+      --typing-speed: 5s;   /* adjust typing duration */
+      --steps: 28;          /* number of characters in the text */
+      --caret-color: #00d4ff;
+    }
+
+    body {
+    	color: green;
+      display: grid;
+      place-items: center;
+      min-height: 10vh;
+      background: #0f172a;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    .typewriter {
+      font-size: 1.2rem;
+      white-space: nowrap;
+      overflow: hidden;                /* hide the text until “typed” */
+      border-right: 2px solid var(--caret-color); /* caret */
+      width: 0;                        /* will animate to full width */
+      animation: typing var(--typing-speed) steps(var(--steps)) forwards,
+                 blink 0.8s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to   { width: 47ch; } /* match or exceed your text length */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+/*--------------  Home effect  ---------------*/
+
+
+	.family
+	{
+		font-family:fantasy ;
+
+	}
+	.family-color
+	{
+		color: red;
+	}
+	.underline
+	{
+		text-decoration: underline;
+		text-decoration-style:wavy ;
+		text-decoration-color:darkred ;
+		
+	}
+	.bg1:hover
+	{
+		background-color: red;
+		color: yellow;
+	}
+	.ul:hover 
+	{
+		background-color: rgb(240, 240, 240);
+		cursor: pointer;
+		color: red;
+	}
+
+	.name
+	{
+		font-style: italic;
+		color: yellow;
+	}
+	.name1
+	{
+		font-style: italic;
+		color: red;
+	}
+	.name2:hover
+	{
+		cursor: pointer;
+		color: red;
+	}
+	.name3:hover
+	{
+		cursor: pointer;
+		color: green;
+	}
+	.name4
+	{
+		font-family: cursive;
+	}
+	.span
+	{
+		color: black;
+	}
+	.span1
+	{
+		font-family: cursive;
+		color: red;
+		font-size: 19.5px;
+	}
+	.span2
+	{
+		font-family: cursive;
+		color: red;
+	}
+	.btn:hover
+	{
+		background: red;
+	}
+	.img
+	{
+		border-radius: 50%;
+	}
+	.card-size
+	{
+		height: 20%; 
+		width: 300px;
+	}
+	.card-effect:hover
+	{
+		transform: translateY(-8px);
+  	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+	}
+	/*my image*/
+	.mypic {
+  width: 500px;
+  border-radius: 20px;
+  position: relative;
+  animation: driveIn 3s ease-in-out forwards,
+             pulse 2s infinite alternate;
+}
+	/* Pulse effect */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+
+	/*-------  Skill tab  ---------*/
+
+
+
+
+/*--------------- Container for hobbies -------------*/
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual hobby cards */
+.hobby-card {
+  background: linear-gradient(135deg, #ffecd2, #ffffe0);
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hobby-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+:root {
+      --orange: #ff7a00;
+      --yellow: #ffd54d;
+      --bg: #f7f7f7;
+      --text: #2b2b2b;
+      --muted: #666;
+      --white: #ffffff;
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      --radius: 16px;
+    }
+
+    /* Page baseline */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      padding: 24px;
+    }
+
+    /* Card wrapper with gradient border effect */
+    .contact-card {
+      position: relative;
+      width: 100%;
+      max-width: 980px;
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    /* Subtle gradient top bar */
+    .contact-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 8px;
+      background: linear-gradient(90deg, var(--orange), var(--yellow));
+    }
+
+    .card-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--orange), var(--yellow));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .card-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .contact-form,
+    .card-info {
+      padding: 24px;
+    }
+
+    .contact-form {
+      background:
+        linear-gradient(180deg, rgba(255, 212, 77, 0.12), rgba(255, 122, 0, 0.08)),
+        var(--white);
+      border-right: 1px solid rgba(0,0,0,0.06);
+    }
+
+/*-------------- Form controls -------------------*/
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .input,
+    .textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 10px;
+      background: #fff;
+      font-size: 1rem;
+      transition: border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .input:focus,
+    .textarea:focus {
+      outline: none;
+      border-color: var(--orange);
+      box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.15);
+    }
+
+    .textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      appearance: none;
+      border: 0;
+      background: linear-gradient(90deg, var(--orange), var(--yellow));
+      color: #1a1a1a;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(255, 122, 0, 0.25);
+      transition: transform 120ms ease, box-shadow 120ms ease, filter 160ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(255, 122, 0, 0.3);
+      filter: brightness(1.02);
+    }
+
+    .btn.secondary {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid rgba(0,0,0,0.12);
+      box-shadow: none;
+    }
+
+    /* Info side */
+    .card-info h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .card-info p {
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .highlight {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--yellow), var(--orange));
+      color: #1a1a1a;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 820px) {
+      .card-content {
+        grid-template-columns: 1fr;
+      }
+      .contact-form {
+        border-right: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+      }
+    }
+
+/*--------------  Fotter class -------------------*/
+
+.icon:hover
+{
+	color: red;
+	cursor: pointer;
+}
+
+.fotter-item a:hover
+{
+	color: red;
+	cursor: pointer;
+}
+.text-color
+{
+	color:#CECECE !important;
+	list-style-type:none ;
+}
+/*---------------  Education class  ---------------*/
+.edu-card:hover
+{
+	transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+</style>
+
+<body>
+
+
+<!-- Header section -->
+
+
+			
+			<nav class="nav navbar navbar-expand-lg navbar-light bg-light bg-opacity-75 shadow-sm fixed-top">
+  <div class="container-fluid container-wide"><!-- class="img-fluid" style="background-image: url(img/by1.jpeg);" -->
+
+      <a class="navbar-brand" href="#" style="display: flex; font-family: Garamond; font-size: 30px;">Salman</a>
+          <!-- <h2 class="navbar-bra" style="font-family:Times New Roman;"><span class="Calibri">Salman</span></h2> -->
+					
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" id="">
+             <span class="navbar-toggler-icon"></span>
+        </button> 
+      
+       
+				<div class="collapse navbar-collapse justify-align-end align-item-end" id="navbar">
+
+					
+						<ul class="navbar-nav mx-auto mx-lg-0 ms-lg-auto">
+							<li class="nav-item me-1 bg ul " style="background-color:;"><a href="#home" class="nav-link active js-scroll-trigger"><i class="fa-solid fa-house mx-1 me-2"></i>Home</a></li>
+							<li class="nav-item me-1 ul"><a href="#about"class="nav-link js-scroll-trigger"><i class="fa-solid fa-circle-user me-2"></i>About</a></li>
+							<li class="nav-item me-1 ul"><a href="#skills"class="nav-link js-scroll-trigger"><i class="fa-solid fa-code me-2"></i>Skills</a></li>
+							<li class="nav-item me-1 ul"><a href="#project"class="nav-link js-scroll-trigger"><i class="fa-solid fa-code-branch me-2"></i>Project</a></li>
+							<li class="nav-item me-1 ul"><a href="#education"class="nav-link js-scroll-trigger"><i class="fa-solid fa-book-open  mx-1 me-2"></i>Education</a></li>
+							<li class="nav-item me-1 ul"><a href="#hobbies"class="nav-link js-scroll-trigger"><i class="fa-solid fa-dumbbell  mx-1 me-2"></i>Hobbies</a></li>
+							<li class="nav-item me-1 ul"><a href="#contact"class="nav-link js-scroll-trigger"><i class="fa-solid fa-phone  mx-1 me-2"></i>Contact</a></li>
+
+						</ul>
+						
+				</div>
+			</nav>
+			
+				<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+<!-- Home section -->
+
+
+
+				
+				<div class="row mt-5 pt-3" id="home">
+          <div class="col-lg-6 ">
+            <h2 style="font-family:arial ; font-size: 40px;" class="ms-5 mt-5" id="">HI THERE!</h2>
+            <h1 style="font-family:  Helvetica; font-size: 60px;color: red;"class=" ms-5"><span style="color: black;">I'M </span>SALMAN</h1>
+            <h6 style="font-family:arial; color: black;" class="bg mt-3 ms-5 text-align-center typewriter">Learner by Heart,Concentency First,Disciplined Apporach.</h6>
+            <p style="" class="mt-3 ms-5">I am a dedicated and enthusiastic student currently pursuing a Bachelor of Computer Applications (BCA).  Alongside my studies, I have a keen interest in computers, technology, and continuous learning. My goal is to build a successful career in the IT and software industry, where I can apply my knowledge, creativity, and problem-solving skills to contribute meaningfully.</p>
+            <a href="#about"><button class="btn btn-warning text-light rounded-pill ms-5">About me</button></a>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="img/mypic.jpg" style="height: 500px;   box-shadow: 10px 10px 20px black" class="img-fluid ms-5 mb-5 shadow shadow-dark shadow-end shadow-bottom rounded-pill mypic">
+          </div>
+        </div>
+
+
+
+<!-- About setion -->	
+
+
+
+				<h1 class="text-center mt-5 family p-5" id="about"><span class="family-color">A</span>BOUT ME</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/mypic.jpg" class="img-fluid img rounded-pill ms-5 mt-3" style="height: 400px; width: 400px; border-radius: 50%;">
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="mt-3" style="font-family:Calibri">I am<span style="color: red;"> Salman Ghosi</span>,Graphic Designer / Programmer.</h3>
+            <p class="name3 mt-3" style="font-family:Verdana">I am a best designer with a deep passion for <span style="color: red;">coding, programming, and mathematics.</span> My academic journey has helped me build a strong foundation in logical thinking and problem-solving, which I apply effectively in both technical and analytical tasks. As a coder and programmer, I enjoy exploring different programming languages, writing efficient code, and developing creative solutions to complex problems. </p>
+            <div style="font-size: 10px;">
+            <h4 style="font-family:Verdana; font-size:15px;">Name<span>: Salman Ghosi</span></h4>
+            <h4 style="font-family:Verdana;font-size: 15px;">Email<span>: salmanali902476@gmail.com</span></h4>
+            <h4 style="font-family:Verdana;font-size: 15px; ">Phone no.<span>: 8949665420</span></h4>
+            <h4 style="font-family:Verdana;font-size: 15px;">Address<span>: Choti Nagfani,Boraj Road,Ajmer,Rajasthan (INDIA)</span></h4>
+          </div>
+        </div>
+
+
+
+<!-- Skill section -->
+
+
+					<h1 class="text-center mt-5  pt-5" id="skills"><span class="family-color">My</span> Skills</h1>
+						
+						<div class="mb-4 mt-5 pb-5">
+	                  	<div class="card">
+	                    	
+	                  		<div class="card-body text-center rounded" style="background-color: #ffffe0; height: 300%;">
+	                     	 	<h4 class="card-title mt-3" style="text-align: left; text-decoration-style: cursive;">What I Do Best</h4>
+	                     	 	<h2 class="mt-3 text-start">HTML</h2>
+	                      		<p class="card-text">
+	                      			<div class="progress" role="progressbar">
+ 														 			<div class="progress-bar progress-danger progress-bar-striped progress-bar-animated bg-danger" style="width: 75%"></div>
+															</div>
+	                      		</p>
+
+	                      		<h2 class="mt-3 text-start">CSS</h2>
+	                      		<p class="card-text">
+	                      			<div class="progress" role="progressbar">
+ 														 			<div class="progress-bar progress-danger progress-bar-striped progress-bar-animated bg-danger" style="width: 80%"></div>
+															</div>
+	                      		</p>
+
+	                      		<h2 class="mt-3 text-start">C Programing</h2>
+	                      		<p class="card-text">
+	                      			<div class="progress" role="progressbar">
+ 														 			<div class="progress-bar progress-danger progress-bar-striped progress-bar-animated bg-danger" style="width: 70%"></div>
+															</div>
+	                      		</p>
+
+	                      		<h2 class="mt-3 text-start">Advanced Basic</h2>
+	                      		<p class="card-text">
+	                      			<div class="progress" role="progressbar">
+ 														 			<div class="progress-bar progress-danger progress-bar-striped progress-bar-animated bg-danger" style="width: 85%"></div>
+															</div>
+	                      		</p>
+	                       		
+	                  		</div>
+	                	</div>
+	          </div>
+
+
+
+<!-- Project Setion -->
+
+					
+
+					
+
+ <h1 class="text-center mt-5  pt-5 family" id="project"><span class="family-color">My</span> Projects</h1>
+
+          <div class="card mt-5" style="background-color: #ffffe0;">
+                        
+                        <div class="card-body" style="height: 300%;">
+                          <h4 class="mt-3"></h4>
+                            <p class="">
+                              <div class="row">
+                                  <div class="col-lg-6 col-sm-6 col-xsm-6">
+                                    <img src="img/project.jpg" class="img-fluid" style="height:100%">
+                                  </div>
+                                  
+                                  <div class="col-lg-6 col-sm-6 col-xsm-6">
+                                    <h4 class="border-dark border-bottom" style="font-family:italic">Crafted a sleek, responsive UI that balances aesthetics with usability.</h4>
+                                    <div class="row mt-3">
+
+                                      <div class="col-lg-6 col-sm-6 col-xsm-6 col-6">
+                                        <div class="card">
+                        
+                                          <div class="card-body  text-center" style="background-color:; height: 310px;">
+                                            <img src="img/h1.jpeg" class="img-fluid">
+                                            <h4 class="mt-3"></h4>
+                                            <p class="">Project Hotel</p>
+                                            <a class="link-item" href="https://salmankhan007-bot.github.io/sal/"><button class="btn btn-primary mb-5">Live Demo</button></a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6 col-sm-6 col-xsm-6 col-6">
+                                        <div class="card">
+                        
+                                          <div class="card-body  text-center" style="background-color:; height: 310px;">
+                                            <img src="sport/sport.jpeg" class="img-fluid" style="height:170px">
+                                            <h4 class="mt-3"></h4>
+                                            <p class="">Project car showroom</p>
+                                            <a class="link-item" href="https://salmankhan007-bot.github.io/sal/"><button class="btn btn-primary mb-5">Live Demo</button></a>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                              </div>
+                            </p>
+                            
+                        </div>
+           </div>
+
+
+				
+<!--Education section  -->
+
+
+
+					
+
+			 <h1 class="text-center mt-5 family pt-5" id="education"><span class="family-color">E</span>DUCATION</h1>
+        <div class="row mt-5 justify-content-center">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4 card-size">
+                     <div class="card edu-card" style="transition: transform 0.9s ease;">
+                        
+                        <div class="card-body text-danger text-center" style="background-color: #ffffe0; height: 300px;">
+                          <i class="fa-solid fa-school fa-3x"></i>
+                          <h4 class="card-title mt-3">Secondary</h4>
+                            <p class="card-text" style="color:black;">I did my secondary education from Shivam Senior Secondary School Prem Nagar,Ajmer.
+                              At that time my favouite subject was mathematics.
+                            </p>
+                            
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4 card-size">
+                      <div class="card edu-card" style="transition: transform 0.9s ease;">
+                        
+                        <div class="card-body text-danger text-center" style="background-color: #ffffe0; height: 300px">
+                          <i class="fa-solid fa-book fa-3x"></i>
+                          <h4 class="card-title mt-3">Heigher Secondary</h4>
+                            <p class="card-text" style="color:black;">I did my Higher secondary education from Shivam Senior Secondary School Prem Nagar,Ajmer.
+                              At that time my favouite subject was History.
+                            </p>
+                            
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-4 card-size">
+                      <div class="card edu-card" style="transition: transform 0.9s ease;">
+                        
+                        <div class="card-body text-danger text-center" style="background-color: #ffffe0; height: 300px">
+                          <i class="fa-solid fa-graduation-cap fa-3x"></i>
+                          <h4 class="card-title mt-3">Graduation</h4>
+                            <p class="card-text" style="color:black;">I am purshing BCA from Star infotech college Ajmer.
+                              And I like coding, but I don’t have much attachment to programming.
+                              Coding is something I really like.
+                            </p>
+                            
+                        </div> 
+                    </div>
+                  </div>
+
+               </div>
+
+      </div>
+
+
+
+
+
+<!-- Hoobies section -->
+
+
+
+
+			<h1 class="text-center mt-5  p-5 family" id="hobbies" ><span class="family-color">H</span>OBBIES</h1>
+
+<div class="row p-5 mt-3">
+
+  <div class="col-lg-4 col-12 mb-5 d-flex-sm justify-align-center-sm align-item-center-sm">
+    <div class="card border border-dark border-4" style="height:100%; width: 80%;">
+     <div class="card-title">
+        <img src="img/painting.jpeg" class="img-fluid" style="height:200px; width: 500px;">
+        <h3 class="text-dark text-center mt-3">🎨 Painting</h3>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-lg-4 col-12 mb-5">
+    <div class="card border border-dark border-4" style="height:100%; width: 80%;">
+     <div class="card-title">
+        <img src="img/reading.jpeg" class="img-fluid" style="height:200px; width: 500px">
+        <h3 class="text-dark text-center mt-3">📚 Reading</h3>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-lg-4 col-12 mb-5">
+    <div class="card border border-dark border-4" style="height:100%; width: 80%;">
+     <div class="card-title">
+        <img src="img/music.jpeg" class="img-fluid" style="height:200px; width: 500px">
+        <h3 class="text-dark text-center mt-3">🎶 Music</h3>
+      </div>
+   </div>
+  </div>
+
+</div>
+
+<div class="row p-5 mt-5 justify-align-center">
+
+
+  <div class="col-lg-4 col-12 mb-5">
+    <div class="card border border-dark border-4" style="height:100%; width: 80%;">
+     <div class="card-title">
+        <img src="img/gym.jpeg" class="img-fluid" style="height:220px; width: 500px">
+        <h3 class="text-dark text-center mt-3">🏋️‍ GYM</h3>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-lg-4 col-12 mb-5">
+    <div class="card border border-dark border-4" style="height:100%; width: 80%;">
+     <div class="card-title">
+        <img src="img/kabbadi.jpeg" class="img-fluid" style="height:220px">
+        <h3 class="text-dark text-center mt-3">🏅 Kabbadi</h3>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-lg-4 col-12 mb-5">
+    <div class="card border border-dark border-4" style="height:100%; width: 80%;">
+     <div class="card-title">
+        <img src="img/travle.jpeg" class="img-fluid" style="height:220px; width: 500px">
+        <h3 class="text-dark text-center mt-3">✈️ Traveling</h3>
+      </div>
+   </div>
+  </div>
+
+</div>
+
+<!-- Contact -->
+
+
+			<h1 class="text-center mt-5  p-5 family" id="contact"><span class="family-color">C</span>ONTACT</h1>
+			  <div class="contact-card" aria-label="Contact card">
+    <header class="card-header">
+      <h2 class="card-title">Get in touch</h2>
+      <span class="highlight">We reply within 24 hours</span>
+    </header>
+
+    <div class="card-content">
+      <!-- Left: Form -->
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input class="input" type="text" id="name" name="name" placeholder="Your full name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" name="email" placeholder="you@example.com" autocomplete="off" required />
+        </div>
+
+        <div class="field">
+          <label for="comment">Comment</label>
+          <input class="textarea" id="comment" name="comment" placeholder="Tell us how we can help..." required style="height:15px"></textarea>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Send message</button>
+          <button class="btn secondary" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <!-- Right: Paragraphs -->
+      <div class="card-info">
+        <h3>Why reach out?</h3>
+        <p>Share feedback, ask a question, or request a custom quote. We’re here to make things simple.</p>
+        <p>Prefer email? Just drop us a line and include any references or screenshots to speed things up.</p>
+        <p>Operating hours: Mon–Sat, 10:00–18:00 IST. Replies outside hours may take a little longer.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Fotter section -->
+
+
+
+  <div class="container-fluid mt-5 ">
+		<div class="border-dark border-top text-center p-3 ">
+				<a class="nav-item text-dark pe-2" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f icon"></i></a>
+				<a class="nav-item text-dark p-2" href="https://x.com/"><i class="fa-brands fa-twitter icon"></i></a>
+				<a class="nav-item text-dark p-2" href="https://google.com/"><i class="fa-brands fa-google icon"></i></a>
+				<a class="nav-item text-dark p-2" href="https://www.youtube.com/"><i class="fa-brands fa-youtube icon"></i></a>
+				<a class="nav-item text-dark p-2" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram icon"></i></a>
+				<a class="nav-item text-dark ps-2" href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in icon"></i></a>
+		</div>	
+	
+			<div class="bg-dark">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<h3 class="mt-5 ms-4 text-light">REPORT</h3>
+						<ul class="mt-5 text-color">
+							<li><a class="text-light fotter-item" href="#" style="text-decoration: none;">Teardown</a></li>
+							<li><a class="text-light" href="#" style="text-decoration: none;">News</a></li>
+							<li><a class="text-light" href="#" style="text-decoration: none;">Partners</a></li>
+							<li><a class="text-light" href="#" style="text-decoration: none;">About us</a></li>
+							<li><a class="text-light"  href="#" style="text-decoration: none;">Contact us</a></li>
+							<li><a class="text-light" href="#" style="text-decoration: none;">Terms of condition</a></li>
+						</ul>
+					</div>
+						
+					<div class="col-lg-3 col-sm-6 text-color">
+						<h3 class="mt-5 ms-4 text-white">Social</h3>
+							<ul class="mt-5 text-color">
+								<li><a class="text-light" href="https://www.facebook.com/" style="text-decoration: none;">Facebook</a></li>
+								<li><a class="text-light"href="https://x.com/" style="text-decoration: none;">Twitter</a></li>
+								<li><a class="text-light"href="https://www.youtube.com/" style="text-decoration: none;">Youtube</a></li>
+							</ul>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 ">
+						<h3 class="mt-5 ms-4 text-white">Service</h3>
+							<ul class="mt-5 text-color">
+								<li><a class="text-light" href="#" style="text-decoration: none;">Compare</a></li>
+								<li><a class="text-light"href="#" style="text-decoration: none;">Dowload</a></li>
+								<li><a class="text-light"href="#" style="text-decoration: none;">Feedback</a></li>
+								<li><a class="text-light"href="#" style="text-decoration: none;">Bug Report</a></li>
+							</ul>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 ">
+						<h3 class="mt-5 ms-4 text-white">Activity</h3>
+							<ul class="mt-5">
+								<li><a class="text-light" href="#" style="text-decoration: none;">Influencers</a></li>
+								<li><a class="text-light"href="#" style="text-decoration: none;">Affirate</a></li>
+								<li><a class="text-light"href="#" style="text-decoration: none;">Co-branding</a></li>
+								<li><a class="text-light"href="#" style="text-decoration: none;">Honor</a></li>
+								<li><a class="text-light"href="#" style="text-decoration: none;">Giveaway</a></li>
+							</ul>
+					</div>
+				
+		</div>
+			<p class="text-center text-light">Copyright@2025SALMAN.All rights reserved.</p>
+
+	</div>
+		
+	</div>
+
+		
+
+    
+</body>
+
+
+</html>
